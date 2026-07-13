@@ -8,9 +8,22 @@ System & Soul engagement delivered by Dr. Gavin Adams. Built to live at
 
 | File | What it is |
 |------|------------|
-| `index.html` | The landing page |
-| `apply.html` | The application page, with a Mailchimp-ready form |
+| `index.html` | Church Accelerator Framework landing page |
+| `apply.html` | Application page for the 12-month engagement, with a Mailchimp-ready form |
+| `training.html` | Executive Pastor Training event page (Sept 23–24, Woodstock City Church), with a Mailchimp-ready registration form |
 | `assets/system-and-soul-gavin-adams-lockup.png` | Co-brand logo, for uploading to Webflow |
+
+### Still to fill in on `training.html`
+
+Search for these tokens and replace every instance:
+
+- `[[TRAINING_PRICE]]` — e.g. `$1,495 per leader`
+- `[[SEATS]]` — e.g. `24`
+
+Dates and venue are already filled in (September 23 & 24, 2026 at Woodstock City
+Church, Woodstock, GA). The training page also needs one extra Mailchimp merge
+field beyond the list below: a `TRAINING` **dropdown** whose option value matches
+the training date string exactly, plus a `TENSION` text field.
 
 Both pages are fully self-contained. All CSS is inline, the logo is embedded
 directly in the HTML, and the only external dependency is Poppins from Google
